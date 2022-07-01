@@ -24,13 +24,11 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rpe-HO-KMx">
                                                 <rect key="frame" x="0.0" y="0.0" width="368" height="39.666666666666664"/>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJr-jt-wr6">
                                                 <rect key="frame" x="0.0" y="54.666666666666686" width="368" height="39.333333333333343"/>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -140,7 +138,7 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="swF-XN-gWb" kind="unwind" unwindAction="unwindFor:" id="DpU-qi-baR"/>
+                                            <segue destination="swF-XN-gWb" kind="unwind" unwindAction="unwindFor:" id="8s9-sf-qhE"/>
                                         </connections>
                                     </button>
                                 </subviews>

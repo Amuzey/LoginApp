@@ -25,14 +25,6 @@ class LoginViewController: UIViewController {
 
     }
     
-    @IBAction func unwind(for unwind: UIStoryboardSegue) {
-        guard let loginVC = unwind.source as? LoginViewController else { return }
-        loginVC.userNameTF.text = ""
-        loginVC.passwordTF.text = ""
-        dismiss(animated: true)
-    }
-    
-
 //   MARK: - IB Action
     @IBAction func logInButtonTapped() {
         if userNameTF.text == "Aleksey", passwordTF.text == "qwerty" {
@@ -48,6 +40,13 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotPassButtonTapped() {
         showAlert(with: "Oops!", and: "You password is qwerty🥳")
+    }
+    
+    @IBAction func unwind(for unwind: UIStoryboardSegue) {
+        guard let loginVC = unwind.destination as? LoginViewController else { return }
+        loginVC.userNameTF.text = ""
+        loginVC.passwordTF.text = ""
+        dismiss(animated: true)
     }
 }
 
