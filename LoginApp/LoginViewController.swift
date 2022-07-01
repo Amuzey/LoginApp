@@ -24,8 +24,16 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func unwind(for unwind: UIStoryboardSegue) {
+        guard let loginVC = unwind.source as? LoginViewController else { return }
+        loginVC.userNameTF.text = ""
+        loginVC.passwordTF.text = ""
+        dismiss(animated: true)
+    }
+    
 
-   
+//   MARK: - IB Action
     @IBAction func logInButtonTapped() {
         if userNameTF.text == "Aleksey", passwordTF.text == "qwerty" {
             

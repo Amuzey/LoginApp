@@ -140,7 +140,7 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="logOutButtontapped" destination="PD3-Z3-OWM" eventType="touchUpInside" id="1wk-Hc-4Ra"/>
+                                            <segue destination="swF-XN-gWb" kind="unwind" unwindAction="unwindFor:" id="DpU-qi-baR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -161,6 +161,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MhE-uH-E96" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="swF-XN-gWb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="234" y="-95"/>
         </scene>
