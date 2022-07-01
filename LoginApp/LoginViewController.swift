@@ -22,13 +22,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-    
-    
+
    
     @IBAction func logInButtonTapped() {
-        if userNameTF.text == "Aleksey", passwordTF.text == "qwerty"{
+        if userNameTF.text == "Aleksey", passwordTF.text == "qwerty" {
             
         } else {
             showAlert(with: "Invalid login and password", and: "Please, enter correct login and password ")
@@ -43,6 +42,7 @@ class LoginViewController: UIViewController {
         showAlert(with: "Oops!", and: "You password is qwerty🥳")
     }
 }
+
 
 
 
