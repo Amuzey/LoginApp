@@ -25,8 +25,14 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+   
     @IBAction func logInButtonTapped() {
-        
+        if userNameTF.text == "Aleksey", passwordTF.text == "qwerty"{
+            
+        } else {
+            showAlert(with: "Invalid login and password", and: "Please, enter correct login and password ")
+        }
     }
     
     @IBAction func forgotNameButtonTapped() {
@@ -39,11 +45,14 @@ class LoginViewController: UIViewController {
 }
 
 
+
 //MARK: - UI Alert Controller
 extension LoginViewController {
     private func showAlert (with title: String, and massage: String) {
         let alert = UIAlertController(title: title, message: massage, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "OK", style: .default)
+        let alertAction = UIAlertAction(title: "OK", style: .default) { alertAction in
+            self.passwordTF.text = ""
+        }
         alert.addAction(alertAction)
         present(alert, animated: true)
     }
