@@ -22,7 +22,6 @@ class WelcomeViewController: UIViewController {
         layer.colors = [UIColor.systemPink.cgColor, UIColor.systemCyan.cgColor]
         viewBackground.layer.addSublayer(layer)
         
-        
         greetingLabel.text = greeting
     }
 }
