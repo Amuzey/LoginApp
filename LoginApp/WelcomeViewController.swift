@@ -11,10 +11,12 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var greetingLabel: UILabel!
     
+    var greeting: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .green
+        greetingLabel.text = greeting
     }
 }
-

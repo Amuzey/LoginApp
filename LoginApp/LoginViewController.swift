@@ -19,16 +19,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotNameButton: UIButton!
     @IBOutlet weak var forgotPassButton: UIButton!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    //    MARK: - Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.greeting = "Welcome, \(userNameTF.text ?? "")"
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
-//   MARK: - IB Action
+    //   MARK: - IB Action
     @IBAction func logInButtonTapped() {
         if userNameTF.text == "Aleksey", passwordTF.text == "qwerty" {
-            
+            print("Пользователь прошел авторизацию")
         } else {
             showAlert(with: "Invalid login and password", and: "Please, enter correct login and password ")
         }
@@ -49,9 +53,6 @@ class LoginViewController: UIViewController {
         dismiss(animated: true)
     }
 }
-
-
-
 
 //MARK: - UI Alert Controller
 extension LoginViewController {
