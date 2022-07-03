@@ -19,7 +19,7 @@ class WelcomeViewController: UIViewController {
         
         let layer = CAGradientLayer()
         layer.frame = viewBackground.bounds
-        layer.colors = [UIColor.red.cgColor, UIColor.green.cgColor]
+        layer.colors = [UIColor.systemPink.cgColor, UIColor.systemCyan.cgColor]
         viewBackground.layer.addSublayer(layer)
         
         
