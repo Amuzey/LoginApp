@@ -11,12 +11,18 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var greetingLabel: UILabel!
     
+    @IBOutlet weak var viewBackground: UIView!
     var greeting: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        let layer = CAGradientLayer()
+        layer.frame = viewBackground.bounds
+        layer.colors = [UIColor.red.cgColor, UIColor.green.cgColor]
+        viewBackground.layer.addSublayer(layer)
+        
+        
         greetingLabel.text = greeting
     }
 }
