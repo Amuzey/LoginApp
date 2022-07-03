@@ -19,6 +19,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotNameButton: UIButton!
     @IBOutlet weak var forgotPassButton: UIButton!
     
+    let name = "Aleksey"
+    let password = "qwerty"
+    
     //    MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -31,7 +34,7 @@ class LoginViewController: UIViewController {
     
     //   MARK: - IB Action
     @IBAction func logInButtonTapped() {
-        if userNameTF.text == "Aleksey", passwordTF.text == "qwerty" {
+        if userNameTF.text == name, passwordTF.text == password {
             print("Пользователь прошел авторизацию")
         } else {
             showAlert(with: "Invalid login and password", and: "Please, enter correct login and password ")
@@ -39,11 +42,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotNameButtonTapped() {
-        showAlert(with: "Oops!", and: "You name is Aleksey🤪")
+        showAlert(with: "Oops!", and: "You name is \(name)🤪")
     }
     
     @IBAction func forgotPassButtonTapped() {
-        showAlert(with: "Oops!", and: "You password is qwerty🥳")
+        showAlert(with: "Oops!", and: "You password is \(password)🥳")
     }
     
     @IBAction func unwind(for unwind: UIStoryboardSegue) {
