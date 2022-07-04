@@ -14,11 +14,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    @IBOutlet weak var logInButton: UIButton!
-    
-    @IBOutlet weak var forgotNameButton: UIButton!
-    @IBOutlet weak var forgotPassButton: UIButton!
-    
     private let name = "Aleksey"
     private let password = "qwerty"
     

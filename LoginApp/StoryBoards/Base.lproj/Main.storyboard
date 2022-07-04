@@ -80,9 +80,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotNameButton" destination="82b-hC-Y80" id="hNo-wK-7rC"/>
-                        <outlet property="forgotPassButton" destination="vJm-gB-L8Y" id="jT3-Jy-V1k"/>
-                        <outlet property="logInButton" destination="C0F-2a-1xw" id="hRf-nt-ZmC"/>
                         <outlet property="passwordTF" destination="hJr-jt-wr6" id="wx6-a7-UZH"/>
                         <outlet property="userNameTF" destination="Rpe-HO-KMx" id="s8j-pq-4ie"/>
                     </connections>
