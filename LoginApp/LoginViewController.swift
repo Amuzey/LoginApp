@@ -19,8 +19,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotNameButton: UIButton!
     @IBOutlet weak var forgotPassButton: UIButton!
     
-    let name = "Aleksey"
-    let password = "qwerty"
+    private let name = "Aleksey"
+    private let password = "qwerty"
     
     //    MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +37,10 @@ class LoginViewController: UIViewController {
         if userNameTF.text == name, passwordTF.text == password {
             print("Пользователь прошел авторизацию")
         } else {
-            showAlert(with: "Invalid login and password", and: "Please, enter correct login and password ")
+            showAlert(
+                with: "Invalid login and password",
+                      and: "Please, enter correct login and password "
+            )
         }
     }
     
