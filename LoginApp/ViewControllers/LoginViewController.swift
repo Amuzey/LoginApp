@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
         } else {
             showAlert(
                 with: "Invalid login and password",
-                      and: "Please, enter correct login and password "
+                      and: "Please, enter correct login or password "
             )
         }
     }
@@ -48,10 +48,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for unwind: UIStoryboardSegue) {
-        guard let loginVC = unwind.destination as? LoginViewController else { return }
-        loginVC.userNameTF.text = ""
-        loginVC.passwordTF.text = ""
-        dismiss(animated: true)
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 }
 
