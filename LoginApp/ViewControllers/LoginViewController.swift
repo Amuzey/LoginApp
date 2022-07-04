@@ -39,7 +39,6 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
-    
     @IBAction func forgotNameButtonTapped() {
         showAlert(with: "Oops!", and: "You name is \(name)🤪")
     }
