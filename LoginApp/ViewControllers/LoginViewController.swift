@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     //    MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.greeting = "Welcome, \(userNameTF.text ?? "")"
+        welcomeVC.greeting = name
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
