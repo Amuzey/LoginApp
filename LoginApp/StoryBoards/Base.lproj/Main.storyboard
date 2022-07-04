@@ -42,7 +42,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="3s4-go-xAm"/>
-                                            <segue destination="PD3-Z3-OWM" kind="presentation" modalPresentationStyle="fullScreen" id="7W2-Ip-6ZV"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GYo-2f-wQK">
@@ -82,6 +81,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="hJr-jt-wr6" id="wx6-a7-UZH"/>
                         <outlet property="userNameTF" destination="Rpe-HO-KMx" id="s8j-pq-4ie"/>
+                        <segue destination="PD3-Z3-OWM" kind="presentation" identifier="showWelcomeVC" id="bEm-jg-wvA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,7 +91,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="oBA-2L-vMO">
             <objects>
-                <viewController id="PD3-Z3-OWM" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="PD3-Z3-OWM" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgt-h1-svw">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -29,15 +29,16 @@ class LoginViewController: UIViewController {
     
     //   MARK: - IB Action
     @IBAction func logInButtonTapped() {
-        if userNameTF.text == name, passwordTF.text == password {
-            print("Пользователь прошел авторизацию")
-        } else {
+        guard userNameTF.text == name, passwordTF.text == password else {
             showAlert(
                 with: "Invalid login and password",
-                      and: "Please, enter correct login or password "
+                and: "Please, enter correct login or password "
             )
+            return
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
+    
     
     @IBAction func forgotNameButtonTapped() {
         showAlert(with: "Oops!", and: "You name is \(name)🤪")
