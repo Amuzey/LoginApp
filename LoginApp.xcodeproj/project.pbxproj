@@ -67,7 +67,6 @@
 				8A96D3C428738B0B003532B7 /* StoryBoards */,
 				8A96D3C528738B35003532B7 /* Resourses */,
 				8A96D3C228738A45003532B7 /* App */,
-				8A96D3BA286EB84E003532B7 /* Info.plist */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -77,6 +76,7 @@
 			children = (
 				8A96D3AC286EB849003532B7 /* AppDelegate.swift */,
 				8A96D3AE286EB849003532B7 /* SceneDelegate.swift */,
+				8A96D3BA286EB84E003532B7 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Z3HCFMYW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -370,7 +370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Z3HCFMYW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

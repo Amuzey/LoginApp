@@ -19,6 +19,7 @@ struct Person {
     let name = "Алексей"
     let surname = "Иванов"
     let age = 25
-    let photo: UIImage
+    let photo: String
+    
 }
 
