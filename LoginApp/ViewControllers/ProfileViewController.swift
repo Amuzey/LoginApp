@@ -10,7 +10,8 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     let avatar = ""
-    let labelName = [""]
+    let name = ""
+    let surname = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

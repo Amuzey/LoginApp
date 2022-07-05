@@ -106,7 +106,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2N4-Lh-tvZ">
                                         <rect key="frame" x="138.66666666666666" y="0.0" width="118.99999999999997" height="329.66666666666669"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAg-rc-i5j">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAg-rc-i5j">
                                                 <rect key="frame" x="0.0" y="0.0" width="119" height="154.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,7 +172,7 @@
                     <connections>
                         <segue destination="PD3-Z3-OWM" kind="relationship" relationship="viewControllers" id="zwN-lg-EQw"/>
                         <segue destination="QDX-lC-n07" kind="relationship" relationship="viewControllers" id="GuT-ro-Plx"/>
-                        <segue destination="pFp-Ck-qCE" kind="relationship" relationship="viewControllers" id="BrP-hT-q8w"/>
+                        <segue destination="6Kk-3z-mzP" kind="relationship" relationship="viewControllers" id="BrP-hT-q8w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQy-tT-qxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -186,16 +186,35 @@
                     <view key="view" contentMode="scaleToFill" id="NQ7-G6-G5b">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aMp-tZ-E6U">
+                                <rect key="frame" x="16" y="64" width="396" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LWc-GX-l3A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aMp-tZ-E6U" firstAttribute="top" secondItem="LWc-GX-l3A" secondAttribute="top" constant="20" id="Uz6-Si-ZUj"/>
+                            <constraint firstItem="LWc-GX-l3A" firstAttribute="bottom" secondItem="aMp-tZ-E6U" secondAttribute="bottom" constant="20" id="YyT-xc-Buk"/>
+                            <constraint firstItem="LWc-GX-l3A" firstAttribute="trailing" secondItem="aMp-tZ-E6U" secondAttribute="trailing" constant="16" id="ba2-d3-4BW"/>
+                            <constraint firstItem="aMp-tZ-E6U" firstAttribute="leading" secondItem="LWc-GX-l3A" secondAttribute="leading" constant="16" id="qsA-T6-SoQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Biography" image="doc.text.magnifyingglass" catalog="system" id="efk-Fu-ydR"/>
+                    <connections>
+                        <outlet property="biographyTextView" destination="aMp-tZ-E6U" id="lRB-X1-wGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcf-d8-apx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="901" y="630"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="sg7-s3-hZB">
             <objects>
                 <viewController id="pFp-Ck-qCE" customClass="ProfileViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,9 +224,28 @@
                         <viewLayoutGuide key="safeArea" id="aQ6-8I-i4G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="k3t-eO-CU0"/>
+                    <navigationItem key="navigationItem" id="Up0-CB-EB0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeA-2f-McJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468.6915887850464" y="629.80561555075599"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="5x1-47-J1X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Kk-3z-mzP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="k3t-eO-CU0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mq3-kN-hHJ">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pFp-Ck-qCE" kind="relationship" relationship="rootViewController" id="bPv-Bw-r49"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUY-II-OtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1568.6915887850466" y="629.80561555075599"/>
         </scene>
@@ -216,6 +254,9 @@
         <image name="doc.text.magnifyingglass" catalog="system" width="107" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

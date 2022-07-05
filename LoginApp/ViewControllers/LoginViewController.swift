@@ -23,7 +23,10 @@ class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.greeting = [userModel.person.name, userModel.person.surname]
+                welcomeVC.name = userModel.person.name
+                welcomeVC.surname = userModel.person.surname
+            } else if let biographyVC = viewController as? BiographyViewController {
+                biographyVC.biogragpy = userModel.person.biography
             }
         }
     }

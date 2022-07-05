@@ -8,12 +8,13 @@
 import UIKit
 
 class BiographyViewController: UIViewController {
+    @IBOutlet weak var biographyTextView: UITextView!
     
-    let biogragpy = ""
+    var biogragpy = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        biographyTextView.text = biogragpy
     }
 }

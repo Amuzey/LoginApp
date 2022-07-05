@@ -13,7 +13,8 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var viewBackground: UIView!
     
-    var greeting = [""]
+    var name = ""
+    var surname = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class WelcomeViewController: UIViewController {
         layer.colors = [UIColor.systemPink.cgColor, UIColor.systemCyan.cgColor]
         viewBackground.layer.addSublayer(layer)
         
-        greetingLabel.text = "Welcome, \(greeting)!"
+        greetingLabel.text = "Добрый день, \(name) \(surname)!"
     }
 }
+
