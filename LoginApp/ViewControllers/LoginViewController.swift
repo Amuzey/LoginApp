@@ -32,6 +32,8 @@ class LoginViewController: UIViewController {
                 profileVC.name = userModel.person.name
                 profileVC.surname = userModel.person.surname
                 profileVC.nameOfAvatarImage = userModel.person.photo
+                profileVC.learningLanguage = userModel.person.learningLanguage
+                profileVC.nameOfLanguageImage = userModel.person.languageLerningLogo
         }
     }
 }

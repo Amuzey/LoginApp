@@ -12,15 +12,16 @@ class MoreViewController: UIViewController {
     @IBOutlet weak var learningLanguageLabel: UILabel!
     @IBOutlet weak var learningLanguageImageView: UIImageView!
     
-    var kindOfActivity = true
+    var learningLanguage = ""
     var nameOfLanguageImage = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        learningLanguageLabel.text = learningLanguage
         let languageImage = UIImage(named: nameOfLanguageImage)
         learningLanguageImageView.image = languageImage
-        learningLanguageLabel.layer.cornerRadius = 15
+        learningLanguageImageView.layer.cornerRadius = 15
         
     }
 }
