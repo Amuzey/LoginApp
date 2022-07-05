@@ -27,9 +27,14 @@ class LoginViewController: UIViewController {
                 welcomeVC.surname = userModel.person.surname
             } else if let biographyVC = viewController as? BiographyViewController {
                 biographyVC.biogragpy = userModel.person.biography
-            }
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let profileVC = navigationVC.topViewController as? ProfileViewController else { return }
+                profileVC.name = userModel.person.name
+                profileVC.surname = userModel.person.surname
+                profileVC.avatar = userModel.person.photo
         }
     }
+}
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)

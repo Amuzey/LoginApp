@@ -9,12 +9,18 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    let avatar = ""
-    let name = ""
-    let surname = ""
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+
+    var avatar = ""
+    var name = ""
+    var surname = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = "\(name) \(surname)"
         
         
     }
