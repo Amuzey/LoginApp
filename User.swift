@@ -10,16 +10,20 @@ import UIKit
 
 
 struct User {
-    let user = "Aleksey"
-    let password = "qwerty"
+    let user: String
+    let password: String
     let person: Person
+    
+//    static func
 }
 
 struct Person {
-    let name = "Алексей"
-    let surname = "Иванов"
-    let age = 25
+    let name: String
+    let surname: String
+    let age: Int
     let photo: String
+    let biography: String
+    let studentSwiftBook: Bool
     
 }
 

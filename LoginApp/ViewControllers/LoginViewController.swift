@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     
     private let name = "Aleksey"
     private let password = "qwerty"
+//    private let userModel = 
     
     //    MARK: - Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
