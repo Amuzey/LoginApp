@@ -18,6 +18,9 @@ class MoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let languageImage = UIImage(named: nameOfLanguageImage)
+        learningLanguageImageView.image = languageImage
+        learningLanguageLabel.layer.cornerRadius = 15
         
     }
 }

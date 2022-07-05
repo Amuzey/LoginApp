@@ -22,12 +22,14 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let image = UIImage(named: nameOfAvatarImage)
-        avatarImageView.image = image
-        avatarImageView.layer.cornerRadius = 75
         nameLabel.text = "\(name) \(surname)"
-        
-        
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let image = UIImage(named: nameOfAvatarImage)
+        avatarImageView.image = image
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.height/2
+    }    
 }
