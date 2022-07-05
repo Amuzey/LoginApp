@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+struct UserProfile {
+    
+    let name = "Aleksey"
+    let password = "qwerty"
+    let age = 25
+    
+}
+
+
