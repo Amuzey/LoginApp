@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var viewBackground: UIView!
     
-    var greeting = ""
+    var greeting = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
