@@ -19,9 +19,11 @@ class MoreViewController: UIViewController {
         super.viewDidLoad()
         
         learningLanguageLabel.text = learningLanguage
+        
         let languageImage = UIImage(named: nameOfLanguageImage)
         learningLanguageImageView.image = languageImage
-        learningLanguageImageView.layer.cornerRadius = 15
+        learningLanguageImageView.layer.cornerRadius = 30
         
     }
+
 }
