@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController {
     var surname = ""
     var learningLanguage = ""
     var nameOfLanguageImage = ""
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let moreVC = segue.destination as? MoreViewController else { return }
         moreVC.learningLanguage = learningLanguage

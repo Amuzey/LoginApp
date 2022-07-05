@@ -14,10 +14,10 @@ class MoreViewController: UIViewController {
     
     var learningLanguage = ""
     var nameOfLanguageImage = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         learningLanguageLabel.text = learningLanguage
         let languageImage = UIImage(named: nameOfLanguageImage)
         learningLanguageImageView.image = languageImage

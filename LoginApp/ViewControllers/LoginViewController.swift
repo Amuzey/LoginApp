@@ -34,9 +34,9 @@ class LoginViewController: UIViewController {
                 profileVC.nameOfAvatarImage = userModel.person.photo
                 profileVC.learningLanguage = userModel.person.learningLanguage
                 profileVC.nameOfLanguageImage = userModel.person.languageLerningLogo
+            }
         }
     }
-}
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)
