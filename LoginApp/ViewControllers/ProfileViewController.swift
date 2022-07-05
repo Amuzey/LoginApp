@@ -12,10 +12,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-
     var avatar = ""
     var name = ""
     var surname = ""
+    var kindOfActivity = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
