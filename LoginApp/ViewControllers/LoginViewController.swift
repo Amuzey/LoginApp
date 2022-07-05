@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                 guard let profileVC = navigationVC.topViewController as? ProfileViewController else { return }
                 profileVC.name = userModel.person.name
                 profileVC.surname = userModel.person.surname
-                profileVC.avatar = userModel.person.photo
+                profileVC.nameOfAvatarImage = userModel.person.photo
         }
     }
 }

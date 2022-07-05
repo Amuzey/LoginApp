@@ -16,9 +16,15 @@ class ProfileViewController: UIViewController {
     var name = ""
     var surname = ""
     
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let image = UIImage(named: nameOfAvatarImage)
+        avatarImageView.image = image
+        avatarImageView.layer.cornerRadius = 75
         nameLabel.text = "\(name) \(surname)"
         
         
