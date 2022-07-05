@@ -9,6 +9,9 @@ import UIKit
 
 class MoreViewController: UIViewController {
     
+    @IBOutlet weak var learningLanguageLabel: UILabel!
+    @IBOutlet weak var learningLanguageImageView: UIImageView!
+    
     var kindOfActivity = true
     var nameOfLanguageImage = ""
 

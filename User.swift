@@ -33,7 +33,7 @@ struct User {
                 — работодателю важны те аспекты вашей жизни,
                 которые могут в той или иной мере влиять на трудовой процесс.
                 """,
-                studentSwiftBook: true,
+                learningLanguage: "Swift",
                 languageLerningLogo: "swift"
             )
         )
@@ -46,7 +46,7 @@ struct Person {
     let age: Int
     let photo: String
     let biography: String
-    let studentSwiftBook: Bool
+    let learningLanguage: String
     let languageLerningLogo: String
     
 }
