@@ -44,7 +44,8 @@ class LoginViewController: UIViewController {
     
     //   MARK: - IB Action
     @IBAction func logInButtonTapped() {
-        guard userNameTF.text == userModel.user, passwordTF.text == userModel.password else {
+        guard userNameTF.text == userModel.user,
+              passwordTF.text == userModel.password else {
             showAlert(
                 with: "Invalid login and password",
                 and: "Please, enter correct login or password "
